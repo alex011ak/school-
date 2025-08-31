@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Academy - Excellence in Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .accent-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .news-card {
+            transition: all 0.3s ease;
+        }
+        
+        .news-card:hover {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-item {
+            overflow: hidden;
+        }
+        
+        .gallery-item img {
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="h-10 w-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">EA</div>
+                        <span class="ml-2 text-xl font-bold text-gray-800">Excel Academy</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#academics" class="text-gray-700 hover:text-blue-600 transition-colors">Academics</a>
+                    <a href="#faculty" class="text-gray-700 hover:text-blue-600 transition-colors">Faculty</a>
+                    <a href="#news" class="text-gray-700 hover:text-blue-600 transition-colors">News</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-playfair">Shaping Tomorrow's Leaders Today</h1>
+                    <p class="text-xl mb-8 opacity-90">Excel Academy provides exceptional education that prepares students for success in college and beyond through innovative teaching and a supportive community.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#admission" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">Apply Now</a>
+                        <a href="#about" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">Learn More</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1f720382-2b49-4f20-b843-d31ba39cac54.png" alt="Modern school campus with students walking between buildings on a sunny day" class="rounded-lg shadow-2xl">
+                    <div class="absolute -bottom-4 -right-4 bg-yellow-400 text-blue-900 p-4 rounded-lg shadow-lg">
+                        <div class="text-2xl font-bold">98%</div>
+                        <div class="text-sm">Graduation Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <div class="stat-number text-4xl font-bold text-blue-600 mb-2">1,250+</div>
+                    <div class="text-gray-600">Students Enrolled</div>
+                </div>
+                <div class="p-6">
+                    <div class="stat-number text-4xl font-bold text-blue-600 mb-2">85+</div>
+                    <div class="text-gray-600">Qualified Teachers</div>
+                </div>
+                <div class="p-6">
+                    <div class="stat-number text-4xl font-bold text-blue-600 mb-2">25+</div>
+                    <div class="text-gray-600">Years Excellence</div>
+                </div>
+                <div class="p-6">
+                    <div class="stat-number text-4xl font-bold text-blue-600 mb-2">95%</div>
+                    <div class="text-gray-600">College Acceptance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-playfair">About Excel Academy</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Dedicated to academic excellence and character development since 1998</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/751be9ab-1611-448d-8d6d-272f11b72bdc.png" alt="Aerial view of Excel Academy campus showing modern buildings, sports fields, and green spaces" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Our Mission & Vision</h3>
+                    <p class="text-gray-600 mb-6">Excel Academy is committed to providing a challenging and supportive learning environment that inspires students to achieve their highest potential. We believe in educating the whole child - academically, socially, and emotionally.</p>
+                    <p class="text-gray-600 mb-8">Our vision is to be recognized as a leader in innovative education, preparing students to thrive in a rapidly changing world while maintaining strong values and community connections.</p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-graduation-cap text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Academic Excellence</h4>
+                                <p class="text-sm text-gray-600">Rigorous curriculum</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-users text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Community Focus</h4>
+                                <p class="text-sm text-gray-600">Strong partnerships</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-playfair">Academic Programs</h2>
+                <p class="text-xl text-gray-600">Comprehensive education from elementary through high school</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg hover-scale">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-pencil-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Elementary School</h3>
+                    <p class="text-gray-600 mb-6">Foundational learning with focus on literacy, numeracy, and social development for grades K-5.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Interactive learning
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Arts integration
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            STEM foundation
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg hover-scale">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-book text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Middle School</h3>
+                    <p class="text-gray-600 mb-6">Challenging curriculum with exploratory courses and leadership development for grades 6-8.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Advanced coursework
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Elective choices
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            College preparation
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg hover-scale">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">High School</h3>
+                    <p class="text-gray-600 mb-6">College preparatory program with AP courses, career pathways, and leadership opportunities.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            AP & Honors courses
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Career pathways
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            College counseling
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-playfair">Meet Our Faculty</h2>
+                <p class="text-xl text-gray-600">Dedicated educators committed to student success</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4788e97a-347b-418c-b44a-32aaba873042.png" alt="Professional portrait of Dr Sarah Johnson, Mathematics Department Chair with warm smile" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800">Dr. Sarah Johnson</h3>
+                    <p class="text-blue-600 mb-2">Mathematics Chair</p>
+                    <p class="text-gray-600 text-sm">Ph.D. in Mathematics Education, 15 years experience</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/451f13e8-3360-4a33-9a64-1aecc6654e35.png" alt="Professional portrait of Mr David Chen, Science Teacher with confident expression" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800">Mr. David Chen</h3>
+                    <p class="text-blue-600 mb-2">Science Teacher</p>
+                    <p class="text-gray-600 text-sm">M.S. in Chemistry, NASA research background</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b84f2d85-2c23-43b6-ae09-6e011e5fb900.png" alt="Professional portrait of Ms Emily Rodriguez, English Literature Professor with thoughtful gaze" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800">Ms. Emily Rodriguez</h3>
+                    <p class="text-blue-600 mb-2">English Department</p>
+                    <p class="text-gray-600 text-sm">M.A. in English Literature, published author</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0a6d9f9c-7469-403a-b6a3-aa2201bdd493.png" alt="Professional portrait of Coach Michael Thompson, Physical Education Director with athletic build" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800">Coach Michael Thompson</h3>
+                    <p class="text-blue-600 mb-2">Athletic Director</p>
+                    <p class="text-gray-600 text-sm">Former professional athlete, 20 years coaching</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events -->
+    <section id="news" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-playfair">News & Events</h2>
+                <p class="text-xl text-gray-600">Stay updated with campus happenings</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="news-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f1b6b360-35a9-4003-8e26-41d6ff500a48.png" alt="Students participating in annual science fair with innovative projects and experiments" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-blue-600 mb-2">October 15, 2023</div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Annual Science Fair Winners</h3>
+                        <p class="text-gray-600 mb-4">Congratulations to all participants in our annual science fair showcasing innovative student projects.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800">Read More →</a>
+                    </div>
+                </div>
+                
+                <div class="news-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7eb8f683-8664-4892-84e1-be46de9005b0.png" alt="Basketball team celebrating championship victory with trophy and cheering crowd" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-blue-600 mb-2">November 3, 2023</div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Basketball Team Wins Championship</h3>
+                        <p class="text-gray-600 mb-4">Our varsity basketball team brings home the state championship after an undefeated season.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800">Read More →</a>
+                    </div>
+                </div>
+                
+                <div class="news-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f3c17123-7566-40af-9807-511948c04e6a.png" alt="College acceptance letters spread out on table with happy students in background" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-sm text-blue-600 mb-2">December 1, 2023</div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Record College Acceptances</h3>
+                        <p class="text-gray-600 mb-4">Class of 2023 achieves 98% college acceptance rate with over $5M in scholarships awarded.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 font-playfair">Get In Touch</h2>
+                    <p class="text-gray-300 mb-8">We'd love to hear from you. Reach out to schedule a tour or learn more about our programs.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-2">Address</h3>
+                                <p class="text-gray-300">123 Education Lane<br>Learning City, LC 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 p-3 rounded-lg mr-4">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-2">Phone</h3>
+                                <p class="text-gray-300">(555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-2">Email</h3>
+                                <p class="text-gray-300">info@excelacademy.edu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="bg-white rounded-lg p-8 text-gray-800">
+                        <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                        <div class="grid gap-6">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Full Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Email Address</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="your.email@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Excel Academy</h3>
+                    <p class="text-gray-400 mb-4">Excellence in education since 1998</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#academics" class="text-gray-400 hover:text-white transition-colors">Academics</a></li>
+                        <li><a href="#faculty" class="text-gray-400 hover:text-white transition-colors">Faculty</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Calendar</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Parent Portal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Student Resources</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Library</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 rounded-l-lg text-gray-800">
+                        <button type="submit" class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-700 transition-colors">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 Excel Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            alert('Mobile menu would open here. This is a demonstration website.');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission prevention
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! This is a demonstration form.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
+
